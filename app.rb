@@ -33,7 +33,7 @@ Cuba.define do
   def posts
     posts = []
     last_post = nil
-    Dir[File.join(File.expand_path(File.dirname(__FILE__)), "posts", "*.md")].sort.reverse.each do |file| 
+    Dir["./posts/*.md"].sort.reverse.each do |file| 
       post = Post[file]
       post.previous = last_post
 
