@@ -1,0 +1,13 @@
+% if post.next
+  {{ this.partial("post_arrow", post: post.next, image: "left-45.png", hover: "lefthover") }}
+% end
+
+% if post.previous
+  {{ this.partial("post_arrow", post: post.previous, image: "right-45.png", hover: "righthover") }}
+% end
+
+<div class="wrapper">
+  <div class="post">
+    {{post.body}}
+  </div>
+</div>

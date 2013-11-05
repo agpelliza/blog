@@ -1,0 +1,11 @@
+<a href="{{post.id}}" id="{{hover}}">
+  <div class="arrow-container">
+    <h3>
+      <small>13 Dec 2012</small> 
+      {{post.title}}
+    </h3>
+    <div class="hover-box">
+      <img src="/img/{{image}}" />
+    </div>
+  </div>
+</a>
