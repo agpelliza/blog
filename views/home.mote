@@ -1,7 +1,7 @@
 <div class="wrapper">
   <ul class="homepage">
     % posts.each do |post|
-      <a href="/posts/{{post.id}}"><li><span>04 Nov 2013</span>    {{post.title}}</li></a>
+      <a href="/post/{{post.id}}"><li><span>04 Nov 2013</span>    {{post.title}}</li></a>
     % end
   </ul>
 </div>
