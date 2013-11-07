@@ -1,5 +1,9 @@
 module PostHelper
   def posts
+    @posts ||= init_posts
+  end
+
+  def init_posts
     posts = []
     last_post = nil
     Dir["./posts/*.{md,html}"].sort.reverse.each do |file| 
